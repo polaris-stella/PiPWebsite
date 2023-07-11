@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.detail .detail_content {
+    margin: 2px 1em 2px 0;
+    float: left;
+}
+
+.detail h2 {
+    float: none;
+}

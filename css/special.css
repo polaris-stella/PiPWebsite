@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.feature {
+    margin: 2.5em 1em;
+    width: 12.5em;
+    height: 12.5em;
+    float: left;
+}
+
+.feature h2 {
+    text-align: center;
+}
+
+.feature h2::after {
+    width: 0;
+    height: 0;
+}
+
+.feature p {
+    text-align: center;
+}
+
+.feature i {
+    width: 100%;
+    color: rgba(0, 0, 50, 0.800);
+    font-size: 5em;
+    text-align: center;
+}

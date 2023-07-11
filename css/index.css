@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.introduction {
+    position: fixed;
+    color: #fff;
+    font-size: xx-large;
+    text-align: center;
+    -webkit-text-stroke: 1px gray;
+    text-shadow: 1px 1px 10px white, 1px -1px 10px white, -1px -1px 10px white, -1px 1px 10px white;
+    margin: 25vh auto;
+    width: 70vw;
+}
+
+.introduction h1 {
+    color: skyblue;
+}
+
+.introduction p {
+    color: rgb(180, 113, 244);
+}
+
+.joinbtn {
+    font-size: 1em;
+    color: #fff;
+    background-color: skyblue;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.joinbtn:hover {
+    background-color: lightblue;
+}
+
+.joinbtn:active {
+    background-color: rgb(81, 123, 140);
+}
