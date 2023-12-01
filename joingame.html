@@ -5,59 +5,64 @@
     <meta charset="utf-8">
     <title>PiPCraft | 加入游戏</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/joingame.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <script src="js/common.js"></script>
+    <script src="js/copytext.js"></script>
     <header>
         <nav>
-            <div class="profile">
-                <a href="index.html"><img src="images/logo.svg" alt="PiPCraft_Logo" class="logo">    
+            <div class="profile" href="index.html">
+                <img src="images/logo.svg" alt="PiPCraft_Logo" class="logo">
+                <a href="index.html">PiPCraft</a>
             </div>
             <ul>
                 <li><i class="fa fa-home"></i><a href="index.html"> 首页</a></li>
                 <li><i class="fa fa-arrow-right"></i><a href="joingame.html"> 加入游戏</a></li>
                 <li><i class="fa fa-question-circle"></i><a href="faq.html"> FAQ</a></li>
-                <li><i class="fa fa-heart"></i><a href="special.html"> 特色</a></li>
-                <li><i class="fa fa-archive"></i><a href="downloads.html"> 资源下载</a></li>
+                <!-- <li><i class="fa fa-heart"></i><a href="special.html"> 特色</a></li> -->
+                <li><i class="fa fa-download"></i><a href="downloads.html"> 资源下载</a></li>
                 <li><i class="fa fa-book"></i><a href="events.html"> 大事记</a></li>
                 <li><i class="fa fa-info-circle"></i><a href="about.html"> 关于</a></li>
-                <li><i class="fa fa-address-book"></i><a href="contact.html"> 联系我们</a></li>
+                <!-- <li><i class="fa fa-address-book"></i><a href="contact.html"> 联系我们</a></li> -->
             </ul>
         </nav>
     </header>
-    <main>
-        <button class="navbutton" onclick="onNavBtnClick()"><i class="fa fa-navicon" style="font-size:24px"></i></button>
-        <div class="detail">
-            <h1>加入游戏</h1>
-            <p>本服几乎实现全版本兼容，您可使用任意客户端加入游戏。<br>不过为了体验全部游戏内容，建议使用1.20.1版本。</p>
-            <h2>服务器地址</h2>
-            <div class="detail_content">
-                <h3>Java版</h3>
-                <p>地址 pip.moe</p>
-            </div>
-            <div class="detail_content">
-                <h3>基岩版</h3>
-                <p>地址 pip.moe<br>端口 10408</p>
-            </div>
-            <div class="clear"></div>
-            <h2>版本</h2>
-            <div class="detail_content">
-                <h3>游戏版本</h3>
-                <p>1.20.1</p>
-            </div>
-            <div class="detail_content">
-                <h3>兼容版本</h3>
-                <p>1.7.x-1.20.x</p>
-            </div>
-            <div class="clear"></div>
+    <div class="content">
+        <h1><i class="fa fa-arrow-right"></i>&nbsp;加入游戏</h1>
+        <p>本服几乎实现全版本兼容, 您可使用任意客户端加入游戏。不过为了体验全部游戏内容, 建议使用1.20.1版本。</p>
+        <div class="tips entry">
+            <h2><i class="fa fa-info-circle"></i>注意事项</h2>
+            <ul>
+                <li>仅类2b2t子服允许恶意破坏</li>
+                <li>模组服需要使用专用客户端才可进入, 请到<a href="downloads.html">资源下载</a>中下载</li>
+            </ul>
         </div>
-    </main>
+        <div class="addresses entry clear">
+            <h2><i class="fa fa-link"></i>服务器地址</h2>
+            <div class="address-detail">
+                <h3>Java版</h3>
+                <p>地址:&nbsp;</p><input type="text" class="address-container" id="pip-je-address" value="pip.moe"
+                    readonly>&nbsp;<button onclick="copyText('pip-je-address')">单击复制</button>
+                <br>
+                <p>模组服地址:&nbsp;</p><input type="text" class="address-container" id="pip-modded-address"
+                    value="modded.pip.moe" readonly>&nbsp;<button onclick="copyText('pip-modded-address')">单击复制</button>
+            </div>
+            <div class="address-detail">
+                <h3>基岩版</h3>
+                <p>地址:&nbsp;</p><input type="text" class="address-container" id="pip-be-address" value="pip.moe"
+                    readonly>&nbsp;<button onclick="copyText('pip-be-address')">单击复制</button>
+                <br>
+                <p>端口(埠):&nbsp;</p><input type="text" class="address-container" id="pip-be-port" value="10408"
+                    readonly>&nbsp;<button onclick="copyText('pip-be-port')">单击复制</button>
+            </div>
+        </div>
+    </div>
     <footer>
-        <p>© 2021-2031 PiPCraft版权所有</p>
+        <p>Copyright © 2021-2023 PiPCraft Team. All rights reserved.</p>
     </footer>
 </body>

@@ -5,45 +5,63 @@
     <meta charset="utf-8">
     <title>PiPCraft | 资源下载</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/downloads.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <script src="js/common.js"></script>
     <header>
         <nav>
-            <div class="profile">
-                <a href="index.html"><img src="images/logo.svg" alt="PiPCraft_Logo" class="logo">    
+            <div class="profile" href="index.html">
+                <img src="images/logo.svg" alt="PiPCraft_Logo" class="logo">
+                <a href="index.html">PiPCraft</a>
             </div>
             <ul>
                 <li><i class="fa fa-home"></i><a href="index.html"> 首页</a></li>
                 <li><i class="fa fa-arrow-right"></i><a href="joingame.html"> 加入游戏</a></li>
                 <li><i class="fa fa-question-circle"></i><a href="faq.html"> FAQ</a></li>
-                <li><i class="fa fa-heart"></i><a href="special.html"> 特色</a></li>
-                <li><i class="fa fa-archive"></i><a href="downloads.html"> 资源下载</a></li>
+                <!-- <li><i class="fa fa-heart"></i><a href="special.html"> 特色</a></li> -->
+                <li><i class="fa fa-download"></i><a href="downloads.html"> 资源下载</a></li>
                 <li><i class="fa fa-book"></i><a href="events.html"> 大事记</a></li>
                 <li><i class="fa fa-info-circle"></i><a href="about.html"> 关于</a></li>
-                <li><i class="fa fa-address-book"></i><a href="contact.html"> 联系我们</a></li>
+                <!-- <li><i class="fa fa-address-book"></i><a href="contact.html"> 联系我们</a></li> -->
             </ul>
         </nav>
     </header>
-    <main>
-        <button class="navbutton" onclick="onNavBtnClick()"><i class="fa fa-navicon" style="font-size:24px"></i></button>
-        <div class="detail">
-            <h1>资源下载</h1>
-            <h2>Java运行环境</h2>
-            <p>备注：若要游玩1.18及以上版本，必须使用Java17或以上版本的运行环境</p>
-            <i class="fa fa-coffee" style="font-size: 2em;"></i>
-            <a href="https://github.com/adoptium/temurin17-binaries/releases">Java17运行环境</a>
-            <i class="fa fa-coffee" style="font-size: 2em;"></i>
-            <a href="https://github.com/adoptium/temurin11-binaries/releases">Java11运行环境</a>
-            <i class="fa fa-coffee" style="font-size: 2em;"></i>
-            <a href="https://github.com/adoptium/temurin8-binaries/releases">Java8运行环境</a>
+    <div class="content">
+        <h1><i class="fa fa-download"></i>&nbsp;资源下载</h1>
+        <p>
+            一些与Minecraft以及PiPCraft服务器有关的资源<br>
+            提示: 按Ctrl+F可以按关键词搜索
+        </p>
+        <div class="resources">
+            <div class="entry" id="clients">
+                <h2><i class="fa fa-gamepad"></i>&nbsp;客户端</h2>
+                <a href="">模组服客户端</a>
+                <a href="">原版客户端</a>
+            </div>
+            <div class="entry" id="cheating-programs">
+                <h2><i class="fa fa-cogs"></i>&nbsp;外挂</h2>
+                <a href="https://www.wurstclient.net/download/">Wurst</a>
+                <a href="https://meteorclient.com/">Meteor</a>
+                <p>注意: 仅可在类2b2t子服中使用, 且禁止使用Crash (令服务器崩溃) 功能。违者封禁，恕不解封。</p>
+            </div>
+            <div class="entry" id="jdk">
+                <h2><i class="fa fa-coffee"></i>&nbsp;Java运行环境</h2>
+                <a href="https://github.com/adoptium/temurin17-binaries/releases">Java17 运行环境</a>
+                <a href="https://github.com/adoptium/temurin11-binaries/releases">Java11 运行环境</a>
+                <a href="https://github.com/adoptium/temurin8-binaries/releases">Java8 运行环境</a>
+                <p>
+                    备注: 若要游玩1.18及以上版本, 必须使用Java17或以上版本的运行环境。
+                    <a href="faq.html#java-version-issue">我应该使用哪个版本的Java运行环境? </a>
+                </p>
+            </div>
         </div>
-    </main>
+    </div>
     <footer>
-        <p>© 2021-2031 PiPCraft版权所有</p>
+        <p>Copyright © 2021-2023 PiPCraft Team. All rights reserved.</p>
     </footer>
 </body>

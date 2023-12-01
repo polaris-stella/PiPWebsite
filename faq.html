@@ -5,63 +5,112 @@
     <meta charset="utf-8">
     <title>PiPCraft | FAQ</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/faq.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@600&display=swap" rel="stylesheet">
 </head>
 
-<body>  
-    <script src="js/common.js"></script>
+<body>
     <header>
         <nav>
-            <div class="profile">
-                <a href="index.html"><img src="images/logo.svg" alt="PiPCraft_Logo" class="logo">    
+            <div class="profile" href="index.html">
+                <img src="images/logo.svg" alt="PiPCraft_Logo" class="logo">
+                <a href="index.html">PiPCraft</a>
             </div>
             <ul>
                 <li><i class="fa fa-home"></i><a href="index.html"> 首页</a></li>
                 <li><i class="fa fa-arrow-right"></i><a href="joingame.html"> 加入游戏</a></li>
                 <li><i class="fa fa-question-circle"></i><a href="faq.html"> FAQ</a></li>
-                <li><i class="fa fa-heart"></i><a href="special.html"> 特色</a></li>
-                <li><i class="fa fa-archive"></i><a href="downloads.html"> 资源下载</a></li>
+                <!-- <li><i class="fa fa-heart"></i><a href="special.html"> 特色</a></li> -->
+                <li><i class="fa fa-download"></i><a href="downloads.html"> 资源下载</a></li>
                 <li><i class="fa fa-book"></i><a href="events.html"> 大事记</a></li>
                 <li><i class="fa fa-info-circle"></i><a href="about.html"> 关于</a></li>
-                <li><i class="fa fa-address-book"></i><a href="contact.html"> 联系我们</a></li>
+                <!-- <li><i class="fa fa-address-book"></i><a href="contact.html"> 联系我们</a></li> -->
             </ul>
         </nav>
     </header>
-    <main>
-        <button class="navbutton" onclick="onNavBtnClick()"><i class="fa fa-navicon" style="font-size:24px"></i></button>
-        <div class="detail">
-            <h1>FAQ</h1>
-            <p>此处列出了一些经常会被问出的问题。在提问之前，不妨先来看看<br>提示: 按Ctrl+F可以按关键词搜索</p>
-            <div class="singlefaq">
-                <h2>我能用基岩版客户端加入服务器吗？</h2>
-                <p>
-                    当然可以，本服采用Geyser让基岩版用户也可以连接到Java版服务器。
-                    <br>
-                    在<a href="joingame.html">此页面</a>中已经列出了基岩版连接服务器所用的地址以及端口号。
-                </p>
-            </div>
-            <div class="singlefaq">
-                <h2>我能用我自己的客户端，而不是你们的推荐客户端加入游戏吗？</h2>
-                <p>
-                    （对于2B2T子服和原版生存子服）当然可以，只要版本为1.7及以上就可以。
-                    <br>
-                    （对于模组子服）也可以，就是有些麻烦。你需要保证你的客户端的游戏版本、Fabric版本与我们的客户端都相同，并且我们装有的Mod在你的客户端中都有安装，且版本一致。
-                </p>
-            </div>
-            <div class="singlefaq">
-                <h2>为什么你们的Discord邀请链接打不开? 服务器官网的网络质量也这么差劲?</h2>
-                <p>
-                    中国大陆地区外交部声称这是由于网络故障导致的，你可以使用代理服务器、VPN等技术临时修复网络故障。
-                    <br>
-                    官方都说了那肯定是真的。不信谣不造谣不传谣从我做起。在用你的鸭标单击发送按钮发表不当言论之前请三思。
-                </p>
-            </div>
+    <div class="content">
+        <h1><i class="fa fa-question-circle"></i>&nbsp;常见问题</h1>
+        <p>此处列出了一些经常会被问出的问题。在提问之前, 不妨先来看看? <br>提示: 按Ctrl+F可以按关键词搜索</p>
+        <h2>目录</h2>
+        <ul>
+            <li><a href="#join-with-be">我能用基岩版客户端加入服务器吗? </a></li>
+            <li><a href="#use-my-client">我能用我自己的客户端, 而不是你们的推荐客户端加入游戏吗? </a></li>
+            <li><a href="#profit-model">你们的盈利模式到底是什么? 服务器的租金来源有哪些? </a></li>
+            <li><a href="#java-version-issue">我应该使用哪个版本的Java运行环境? </a></li>
+            <li><a href="#corgi-jockey">为什么操作员Polaris_Stella有时被叫做"猛狗骑士"? </a></li>
+            <li><a href="#nationwide-fault">为什么你们的Discord邀请链接打不开? Youtube上的视频也看不了。并且服务器官网的网络质量还这么差劲? </a></li>
+            <!-- 模板:  <li><a href="#eng-abbr">标题</a></li> -->
+        </ul>
+        <h2>正文</h2>
+        <div class="qanda entry" id="join-with-be">
+            <h2><i class="fa fa-commenting"></i>&nbsp;我能用基岩版客户端加入服务器吗? </h2>
+            <p>
+                对于除模组服以外的子服而言, 当然可以。本服采用Geyser让基岩版用户也可以连接到Java版服务器。<br>
+                在<a href="joingame.html">加入游戏页面</a>中已经列出了基岩版连接服务器所用的地址以及端口号。<br>
+                想使用手机游玩模组服的玩家也不要灰心, 现在已经有较为成熟的技术 (例如：<a
+                    href="https://github.com/PojavLauncherTeam/PojavLauncher">PojavLauncher</a>) 在移动设备上运行Minecraft
+                Java版了。
+            </p>
         </div>
-    </main>
+        <div class="qanda entry" id="use-my-client">
+            <h2><i class="fa fa-commenting"></i>&nbsp;我能用我自己的客户端, 而不是你们的推荐客户端加入游戏吗? </h2>
+            <p>
+                在2b2t或原版生存子服的话, 当然可以! 只要你的客户端游戏版本在1.7以上, 就能加入游戏。<br>
+                在模组子服的话, 理论上也可以, 实际操作起来麻烦些。你需要保证我们装有的Mod在你的客户端中都有安装、且你的客户端的游戏版本、Fabric版本、所有Mod各自的版本均与我们提供的客户端相同。
+            </p>
+        </div>
+        <div class="qanda entry" id="profit-model">
+            <h2><i class="fa fa-commenting"></i>&nbsp;你们的盈利模式到底是什么? 服务器的租金来源有哪些? </h2>
+            <p>
+                我们的盈利模式理论上为: 只接受无偿捐助。<br>
+                实际上为: <a href="https://twitter.com/polaristella1">@Polaris_Stella</a>的钱包。因为开服以来, 我们没有收到过一笔捐款。<br>
+                注意: 以前为不接受任何捐助。现在为吸引人们加入管理团队, 故改为接受无偿捐助。请以此处为准。
+            </p>
+        </div>
+        <div class="qanda entry" id="java-version-issue">
+            <h2><i class="fa fa-coffee"></i>&nbsp;我应该使用哪个版本的Java运行环境? </h2>
+            <p>
+                注: 本信息来源于Minecraft Wiki的<a
+                    href="https://minecraft.fandom.com/zh/wiki/%E6%95%99%E7%A8%8B/%E6%9B%B4%E6%96%B0Java#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%9B%B4%E6%96%B0%EF%BC%9F">教程/更新Java</a>页面。<br>
+                <br>
+                Java版1.12 (17w13a) 至Java版1.16.5 (1.17: 21w18a) 需要Java 8启动游戏<br>
+                Java版1.17 (21w19a) 至Java版1.17.1 (1.18: 1.18-pre1) 需要Java 16启动游戏<br>
+                自Java版1.18 (1.18-pre2) 起需要Java 18 启动游戏。<br>
+                <br>
+                请查看你所使用客户端的游戏版本, 并安装对应版本的Java运行环境。<br>
+                截止至2023年11月, 服务器游戏版本为1.20.1 (原版生存、类2b2t) 和1.19.4 (模组服)。<br>
+                因此, 若要游玩我们的服务器, 你需要下载Java 18以及对应版本的客户端。 (模组服需要使用专用客户端才可进入。)
+            </p>
+        </div>
+        <div class="qanda entry" id="corgi-jockey">
+            <h2><i class="fa fa-commenting"></i>&nbsp;为什么操作员Polaris_Stella有时被称为"猛狗骑士"? </h2>
+            <p>
+                Polaris养有一只柯基犬, 与其他柯基不同的是腿非常长, 且非常凶猛。 (可惜逃跑时没有带上, 也不能带, 现在处于人基分离状态) 。<br>
+                之前与落雨合开服务器时, 落雨得知了这个情况, 戏称Polaris为"猛狗骑士"。
+            </p>
+        </div>
+        <div class="qanda entry" id="nationwide-fault">
+            <h2><i class="fa fa-commenting"></i>&nbsp;为什么你们的Discord邀请链接打不开? Youtube上的视频也看不了。并且服务器官网的网络质量还这么差劲? </h2>
+            <p>
+                中国大陆地区外交部声称这是由于网络故障导致的, 你可以使用代理服务器、VPN等技术临时修复网络故障。<br>
+                截止至2023年, 此故障已持续了10年余。且至今未修复。对我们来说, 修复网络故障已经成为了平平无齐的现象。<br>
+                官方都说了那肯定是真的。不信谣不造谣不传谣从我做起。在用你的鸭标单击发送按钮发表不当言论之前请三思。
+            </p>
+        </div>
+        <!-- 模板: 
+        <div class="qanda" id="eng-abbr">
+            <h2><i class="fa fa-commenting"></i>&nbsp;标题</h2>
+            <p>
+                写入内容, 需要换行时添加标签然后在下一行对齐书写。<br>
+                就像这样。
+            </p>
+        </div> 
+        -->
+    </div>
     <footer>
-        <p>© 2021-2022 PiPCraft版权所有</p>
+        <p>Copyright © 1996-2023 PiPCraft Team. All rights reserved.</p>
     </footer>
 </body>

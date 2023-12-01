@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@import "common.css";
+
+#acknowledgments {
+    display: flex;
+    flex-direction: column;
+}
+
+#acknowledgments a {
+    display: inline-block;
+    width: 15%;
+}

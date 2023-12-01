@@ -5,40 +5,95 @@
     <meta charset="utf-8">
     <title>PiPCraft | 首页</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <script src="js/common.js"></script>
     <header>
         <nav>
-            <div class="profile">
-                <a href="index.html"><img src="images/logo.svg" alt="PiPCraft_Logo" class="logo">    
-            </div>
+            <div class="profile" href="index.html">
+                <img src="images/logo.svg" alt="PiPCraft_Logo" class="logo">
+                <a href="index.html">PiPCraft</a>
+            </div>  
             <ul>
                 <li><i class="fa fa-home"></i><a href="index.html"> 首页</a></li>
                 <li><i class="fa fa-arrow-right"></i><a href="joingame.html"> 加入游戏</a></li>
                 <li><i class="fa fa-question-circle"></i><a href="faq.html"> FAQ</a></li>
-                <li><i class="fa fa-heart"></i><a href="special.html"> 特色</a></li>
-                <li><i class="fa fa-archive"></i><a href="downloads.html"> 资源下载</a></li>
+                <!-- <li><i class="fa fa-heart"></i><a href="special.html"> 特色</a></li> -->
+                <li><i class="fa fa-download"></i><a href="downloads.html"> 资源下载</a></li>
                 <li><i class="fa fa-book"></i><a href="events.html"> 大事记</a></li>
                 <li><i class="fa fa-info-circle"></i><a href="about.html"> 关于</a></li>
-                <li><i class="fa fa-address-book"></i><a href="contact.html"> 联系我们</a></li>
+                <!-- <li><i class="fa fa-address-book"></i><a href="contact.html"> 联系我们</a></li> -->
             </ul>
         </nav>
     </header>
-    <main>
-        <button class="navbutton" onclick="onNavBtnClick()"><i class="fa fa-navicon" style="font-size:24px"></i></button>
-        <div class="introduction">
-            <h1>PiPCraft</h1>
-            <p>纯公益性质的Minecraft群组服务器</p>
-            <a href="joingame.html"><button class="joinbtn">立即加入</button></a>
+    <div class="introduction">
+        <p class="poster">纯公益性质的Minecraft群组服务器<br><a href="joingame.html"><button>立即加入</button></a></p>
+        <a href="#detail" class="below-hint"><i class="fa fa-angle-double-down"></i>&nbsp;详细信息</a>
+    </div>
+    <span id="detail"></span>
+    <div class="content">
+        <div class="feature">
+            <i class="fa fa-hourglass"></i>
+            <div class="word">
+                <h2>无需排队</h2>
+                <p>想玩随时可以玩, 不用苦苦等待排队。<br>为您的游戏时间续上无数个1s!</p>
+            </div>
         </div>
-    </main>
+        <div class="feature">
+            <i class="fa fa-heart"></i>
+            <div class="word">
+                <h2>完全公益</h2>
+                <p>本服是完完全全的公益服。<br>仅接受无偿捐助。</p>
+            </div>
+        </div>
+        <div class="feature">
+            <i class="fa fa-key"></i>
+            <div class="word">
+                <h2>低加入门槛</h2>
+                <p>无正版验证以及白名单。1.7-1.20.x全版本兼容。<br>真正做到有客户端即可加入。</p>
+            </div>
+        </div>
+        <div class="feature">
+            <i class="fa fa-server"></i>
+            <div class="word">
+                <h2>高性能服务器</h2>
+                <p>服务器采用可可云计算13代i9 VPS搭建。<br>拒绝卡顿, 带给您流畅的游戏体验。</p>
+            </div>
+        </div>
+        <div class="feature">
+            <i class="fa fa-wifi"></i>
+            <div class="word">
+                <h2>优质宽带</h2>
+                <p>采用三线BGP宽带, <br>保证高速度低延迟。</p>
+            </div>
+        </div>
+        <div class="feature">
+            <i class="fa fa-code"></i>
+            <div class="word">
+                <h2>自研插件</h2>
+                <p>腐竹Polaris酱有Java开发能力, 可自行研发插件。<br>内容可自定义度更深。</p>
+            </div>
+        </div>
+        <div class="feature">
+            <i class="fa fa-cloud-upload"></i>
+            <div class="word">
+                <h2>备份频繁</h2>
+                <p>服务器每天均会备份一次存档, <br>您的心血不会因为意外而丢失。</p>
+            </div>
+        </div>
+        <div class="feature">
+            <i class="fa fa-transgender-alt"></i>
+            <div class="word">
+                <h2>公平对待</h2>
+                <p>服务器维护人员不会歧视各类少数人群<br>真正做到人人平等</p>
+            </div>
+        </div>
+    </div>
     <footer>
-        <p>© 2021-2031 PiPCraft版权所有</p>
+        <p>Copyright © 2021-2023 PiPCraft Team. All rights reserved.</p>
     </footer>
 </body>

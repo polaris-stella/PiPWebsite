@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@import "common.css";
+
+.content p {
+    text-align: center;
+}
+.content .entries{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.entry {
+    display: block;
+    text-align: center;
+    margin: 0.5em;
+}

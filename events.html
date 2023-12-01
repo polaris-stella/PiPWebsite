@@ -3,49 +3,73 @@
 
 <head>
     <meta charset="utf-8">
-    <title>PiPCraft | 服务器大事记</title>
+    <title>PiPCraft | 大事记</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/events.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <script src="js/common.js"></script>
     <header>
         <nav>
-            <div class="profile">
-                <a href="index.html"><img src="images/logo.svg" alt="PiPCraft_Logo" class="logo">    
+            <div class="profile" href="index.html">
+                <img src="images/logo.svg" alt="PiPCraft_Logo" class="logo">
+                <a href="index.html">PiPCraft</a>
             </div>
             <ul>
                 <li><i class="fa fa-home"></i><a href="index.html"> 首页</a></li>
                 <li><i class="fa fa-arrow-right"></i><a href="joingame.html"> 加入游戏</a></li>
                 <li><i class="fa fa-question-circle"></i><a href="faq.html"> FAQ</a></li>
-                <li><i class="fa fa-heart"></i><a href="special.html"> 特色</a></li>
-                <li><i class="fa fa-archive"></i><a href="downloads.html"> 资源下载</a></li>
+                <!-- <li><i class="fa fa-heart"></i><a href="special.html"> 特色</a></li> -->
+                <li><i class="fa fa-download"></i><a href="downloads.html"> 资源下载</a></li>
                 <li><i class="fa fa-book"></i><a href="events.html"> 大事记</a></li>
                 <li><i class="fa fa-info-circle"></i><a href="about.html"> 关于</a></li>
-                <li><i class="fa fa-address-book"></i><a href="contact.html"> 联系我们</a></li>
+                <!-- <li><i class="fa fa-address-book"></i><a href="contact.html"> 联系我们</a></li> -->
             </ul>
         </nav>
     </header>
-    <main>
-        <button class="navbutton" onclick="onNavBtnClick()"><i class="fa fa-navicon" style="font-size:24px"></i></button>
-        <div class="detail">
-            <h1>服务器大事记</h1>
-            <h2>2023年7月15日</h2>
-            <p>服务器重新开启，升级到了1.20.1，并在原来的基础上增加了原版生存子服<br>与此同时，模组服务器开始筹备。</p>
-            <h2>2022年10月</h2>
-            <p>主要管理者Polaris_Stella因性少数的身份被强制封闭扭转，服务器被迫关闭。</p>
-            <h2>2022年9月1日</h2>
-            <p>官网上线，目前临时部署在github pages上。</p>
-            <h2>2022年8月31日</h2>
-            <p>正式支持1.19.1与1.19.2</p>
-            <h2>2022年6月10日</h2>
-            <p>服务器正式开启</p>
+    <div class="content">
+        <h1><i class="fa fa-book"></i>&nbsp;大事记</h1><br>
+        <p>这里记录了关于服务器的大事。</p>
+        <!-- Alert: The earlier the event occurs, the higher the entry position is. -->
+        <div class="entries">
+            <div class="entry" id="server-opening">
+                <h2><i class="fa fa-calendar"></i><time datetime="2022-06-10">2022-06-10</time></h2>
+                <p>服务器正式开始运营, 服务端版本1.18.2, 并向下兼容至1.7.x</p>
+            </div>
+            <div class="entry" id="updated-to-one-dot-nineteen">
+                <h2><i class="fa fa-calendar"></i><time datetime="2022-08-31">2022-08-31</time></h2>
+                <p>服务端版本升级至1.19.2 (依旧可向下兼容至1.7.x) </p>
+            </div>
+            <div class="entry" id="website-launched">
+                <h2><i class="fa fa-calendar"></i><time datetime="2022-09-01">2022-09-01</time></h2>
+                <p>官网上线, 目前部署在Github Pages上。</p>
+            </div>
+            <div class="entry" id="conversion-therapy">
+                <h2><i class="fa fa-calendar"></i><time datetime="2022-09-06">2022-09-06</time></h2>
+                <p>主要管理者 @Polaris_Stella 因性少数的身份被强制扭转治疗, 服务器被迫关闭。</p>
+            </div>
+            <div class="entry" id="server-reopening">
+                <h2><i class="fa fa-calendar"></i><time datetime="2023-07-15">2023-07-15</time></h2>
+                <p>服务器重新开始运营</p>
+                <p>游戏版本升级至1.20.1, 并在原来的基础上增加了原版生存子服</p>
+                <p>模组生存子服开始筹备</p>
+            </div>
+            <div class="entry" id="host-server-fault">
+                <h2><i class="fa fa-calendar"></i><time datetime="2023-10-31">2023-10-31</time></h2>
+                <p>VPS所在宿主机出现故障 (无法开机, 无显示输出) , 服务器暂停运行。</p>
+                <p>服务器存档因此丢失, 被迫还原了一天前的备份。导致回档一天。</p>
+            </div>
+            <div class="entry" id="website-revised">
+                <h2><i class="fa fa-calendar"></i><time datetime="2023-12-02">2023-12-02</time></h2>
+                <p>官网大幅度改版, 并将旧官网源代码放置在了old-version分支中。</p>
+            </div>
         </div>
-    </main>
+    </div>
     <footer>
-        <p>© 2021-2031 PiPCraft版权所有</p>
+        <p>Copyright © 2021-2023 PiPCraft Team. All rights reserved.</p>
     </footer>
 </body>

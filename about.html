@@ -3,47 +3,80 @@
 
 <head>
     <meta charset="utf-8">
-    <title>PiPCraft | 关于我们</title>
+    <title>PiPCraft | Page Sample</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@600&display=swap" rel="stylesheet">
 </head>
 
-<body>  
-    <script src="js/common.js"></script>
+<body>
+    <script src="js/randomsort.js"></script>
     <header>
         <nav>
-            <div class="profile">
-                <a href="index.html"><img src="images/logo.svg" alt="PiPCraft_Logo" class="logo">    
+            <div class="profile" href="index.html">
+                <img src="images/logo.svg" alt="PiPCraft_Logo" class="logo">
+                <a href="index.html">PiPCraft</a>
             </div>
             <ul>
                 <li><i class="fa fa-home"></i><a href="index.html"> 首页</a></li>
                 <li><i class="fa fa-arrow-right"></i><a href="joingame.html"> 加入游戏</a></li>
                 <li><i class="fa fa-question-circle"></i><a href="faq.html"> FAQ</a></li>
-                <li><i class="fa fa-heart"></i><a href="special.html"> 特色</a></li>
-                <li><i class="fa fa-archive"></i><a href="downloads.html"> 资源下载</a></li>
+                <!-- <li><i class="fa fa-heart"></i><a href="special.html"> 特色</a></li> -->
+                <li><i class="fa fa-download"></i><a href="downloads.html"> 资源下载</a></li>
                 <li><i class="fa fa-book"></i><a href="events.html"> 大事记</a></li>
                 <li><i class="fa fa-info-circle"></i><a href="about.html"> 关于</a></li>
-                <li><i class="fa fa-address-book"></i><a href="contact.html"> 联系我们</a></li>
+                <!-- <li><i class="fa fa-address-book"></i><a href="contact.html"> 联系我们</a></li> -->
             </ul>
         </nav>
     </header>
-    <main>
-        <button class="navbutton" onclick="onNavBtnClick()"><i class="fa fa-navicon" style="font-size:24px"></i></button>
-        <div class="detail">
-            <h1>关于我们</h1>
-            <p>PiPCraft是一个纯公益性质的群组服务器。<br>不接受任何有偿捐助</p>
-            <h1>鸣谢 (排名不分先后)</h1>
-            <p><a href="https://github.com/MoeLuoYu">@MoeLuoYu</a> 编写了部分主插件的代码。</p>
-            <p><a href="https://www.mcbbs.net/home.php?mod=space&uid=3338808">@_abc____</a> 编写了部分主插件的代码。</p>
-            <p><a href="https://github.com/CarmJos">@Carm</a> 原CN2B2T腐竹，提供此类(无政府主义)服务器创作灵感。</p>
-            <p><a href="https://github.com/hllRGB">@hll_RGB</a> 不断拉拢新玩家，提供开服动力。</p>
-            <p><a href="https://github.com/Hoyiqiang">@Hoyiqiang</a> 完善服务器Discord讨论组。</p>
-            <p><a href="https://github.com/Polaris-Stella">@Polaris_Stella</a> 服务器运营人员，提供资金以及技术支持。也编写了部分主插件的代码。</p>
+    <!-- Modify the content in this division when applying the template and delete this comment -->
+    <div class="content">
+        <h1>关于PiPCraft</h1><br>
+        <div class="entry" id="about">
+            <p></p>
         </div>
-    </main>
+        <div class="entry">
+            <h2><i class="fa fa-handshake-o"></i>鸣谢</h2>
+            <p>注: 页面加载时重新随机排序。</p>
+            <!-- 排名不分先后 Name not listed in order -->
+            <div id="acknowledgments">
+                <p class="person">
+                    <a href="https://github.com/MoeLuoYu">@MoeLuoYu</a>
+                    原CN2B2T第二任腐竹; 编写了部分主插件的代码。
+                </p>
+                <p class="person">
+                    <a href="https://www.mcbbs.net/home.php?mod=space&uid=3338808">@_abc____</a>
+                    编写了部分主插件的代码。
+                </p>
+                <p class="person">
+                    <a href="https://github.com/CarmJos">@Carm</a>
+                    原CN2B2T腐竹, 提供无政府主义服务器创作灵感。
+                </p>
+                <p class="person">
+                    <a href="https://github.com/hllRGB">@hll_RGB</a>
+                    不断拉拢新玩家，提供开服动力; 参与服务器维护。
+                </p>
+                <p class="person">
+                    <a href="https://github.com/Hoyiqiang">@Hoyiqiang</a>
+                    完善服务器Discord讨论组; 参与服务器维护
+                </p>
+                <p class="person">
+                    <a href="https://github.com/Polaris-Stella">@Polaris_Stella</a>
+                    服务器运营人员，提供资金以及技术支持; 编写了部分主插件的代码。
+                </p>
+            </div>
+        </div>
+        <div class="entry">
+            <h2><i class="fa fa-handshake-o"></i>联系方式</h2>
+            <p><i class="fa fa-gamepad"></i>&nbsp;<a href="https://discord.com/invite/4BwJ9QvezE" target="_blank">Discord讨论组</a></p>
+            <p><i class="fa fa-qq"></i>&nbsp;QQ群: 303242024</p>
+        </div>
+    </div>
+    
     <footer>
-        <p>© 2021-2022 PiPCraft版权所有</p>
+        <p>Copyright © 2021-2023 PiPCraft Team. All rights reserved.</p>
     </footer>
 </body>

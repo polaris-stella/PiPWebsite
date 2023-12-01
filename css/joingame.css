@@ -1,10 +1,31 @@
 @charset "UTF-8";
+@import "common.css";
 
-.detail .detail_content {
-    margin: 2px 1em 2px 0;
-    float: left;
+input {
+    width: 128px;
 }
 
-.detail h2 {
-    float: none;
+.address-detail {
+    float: left;
+    width: 40%;
+    margin: 0;
+    width: fit-content;
+    padding: 0 auto;
+    display: inline;
+}
+
+.address-detail h3 {
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.address-detail p {
+    text-align-last: justify;
+    width: 6em;
+    display: inline-block;
+}
+
+.address-container {
+    width: fit-content;
+    text-align: center;
 }
